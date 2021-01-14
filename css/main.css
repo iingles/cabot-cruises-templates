@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@300;400&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+.container {
+  margin: 0 auto;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
