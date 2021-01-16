@@ -13,12 +13,10 @@
                 <div class="header-top">
                     <div class="header-logo">
                         <img 
-                        srcset="
-                        ./img/logo/clogo-234x150.png 3x,
-                        ./img/logo/clogo-117x75.png 2x,
-                        ./img/logo/clogo-62x40.png 1.5x
-                        "
-                        src="./img/logo/clogo-234x150.png"
+                        src="./img/logo/clogo-234x150.png"                       
+                        srcset="./img/logo/clogo-62x40.png 3x,                        
+                                ./img/logo/clogo-117x75.png 2x,
+                                ./img/logo/clogo-234x150.png 1x"
                         alt="Cabot Cruises Logo"
                         />
                     </div>
@@ -35,7 +33,7 @@
                     </nav>
                     <div class="top-search">
                         <form action="" class="main-search">
-                            <input type="text">
+                            <input type="text" placeholder="search...">
                             <button type="submit"></button>
                         </form>
                     </div>
@@ -46,15 +44,90 @@
         <main>
             <div class="container">
                 <section class="carousel">
-
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
                 </section>
     
                 <section class="article-list">
-    
+                    <article>
+                        <header class="article-title">
+                            Article Title Goes Here and may wrap
+                            to two lines.
+                        </header>
+                        <footer class="article-footer">
+                            May 1, 2018
+                        </footer>
+                    </article>
+                    <article>
+                        <header class="article-title">
+                            Article Title Goes Here and may wrap
+                            to two lines.
+                        </header>
+                        <footer class="article-footer">
+                            May 1, 2018
+                        </footer>
+                    </article>
+                    <article>
+                        <header class="article-title">
+                            Article Title Goes Here and may wrap
+                            to two lines.
+                        </header>
+                        <footer class="article-footer">
+                            May 1, 2018
+                        </footer>
+                    </article>
+                    <article>
+                        <header class="article-title">
+                            Article Title Goes Here and may wrap
+                            to two lines.
+                        </header>
+                        <footer class="article-footer">
+                            May 1, 2018
+                        </footer>
+                    </article>
                 </section>
     
                 <section class="contact-info">
-    
+                    <div class="col">
+                        <h2>Contact Us</h2>
+                        <p>
+                            CABOT CRUIZES <br />
+                            23 S Main St. Suite 16 <br />
+                            Lexington, VA 24450
+                        </p>
+                        <h2>Phone:</h2>
+                        <a href="tel:18005551234">1-800-555-1234</a>
+                        <h2>Hours of Operation:</h2>
+                        <p>Monday-Friday 9am-4pm</p>
+                    </div>
+                    <div class="col">
+                        <h2>Newsletter</h2>
+                        <p>
+                            Subscribe to our email list and stay up-to-date with our
+                            ho6est offers and latest specials
+                        </p>
+                        <form action="" class="newsletter-signup">
+                            <input type="text">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <h2>Why Cabot Cruises</h2>
+                        <p>
+                            Cabot Cruises is a travel agency providing the best cruise
+                            deals on our online travel website. We can help you with all
+                            inclusive vacaMons including discounted cruises.
+                        </p>
+                        <p>
+                            We do not sell travel to residents of Delaware, Iowa,
+                            Florida, Hawaii and Washington state because those states
+                            are just wierd. If you are a resident of one of these states,
+                            call your congressman and tell them to change the
+                            regulations.
+                        </p>
+                    </div>
                 </section>
             </div>
         </main>
@@ -75,5 +148,25 @@
                 </div>
             </div>           
         </footer>
+
+        <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "TravelAgency",
+              "name": "Cabot Cruises",
+              "description": "Cabot Cruises is a travel agency providing the best cruise deals on our online travel website.",
+              "openingHours": "Mo-Fr 09:00-16:00",
+              "telephone": "+13855551234",
+              "faxNumber": "+1385559876",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1 Washington Ave",
+                "addressLocality": "Miami Beach",
+                "addressRegion": "FL"
+              },
+              "image": "http://fullpath.com/logo.png",
+              "priceRange": "$500 to $4000"
+            }
+        </script>
     </body>
 </html>

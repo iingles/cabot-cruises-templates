@@ -1,0 +1,16 @@
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    article {
+        max-height: 30rem;
+        max-width: 30rem;
+
+        header {
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
