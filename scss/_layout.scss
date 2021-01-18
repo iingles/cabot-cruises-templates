@@ -1,9 +1,8 @@
 // General layout styles
 
-
-
-// Bootstrap-like container
+// General container element
 .container {
+
     margin: 0 auto;
 
     @media screen and (min-width: $xs) {
@@ -22,5 +21,3 @@
         max-width: $lg;
     }
 }
-
-

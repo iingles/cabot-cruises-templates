@@ -1,0 +1,21 @@
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #72B3E2;
+    color: #fff;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+
+        li {    
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    } 
+    
+    
+}

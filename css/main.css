@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -36,8 +41,68 @@ h6 {
   font-size: 1.2rem;
 }
 
-.main-header .header-logo img {
-  width: 15%;
+.main-header {
+  background-color: #f1f1f1;
+}
+.main-header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #72B3E2;
+  color: #fff;
+}
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-footer .footer-top {
+  padding: 1.5rem;
+  background-color: #4054A5;
+}
+.main-footer .footer-top .social-links {
+  display: flex;
+  justify-content: center;
+}
+.main-footer .footer-top .social-links a {
+  margin-right: 1rem;
+  font-size: 3.2rem;
+  text-decoration: none;
+}
+.main-footer .footer-top .social-links a .fa-facebook-square {
+  color: #fff;
+}
+.main-footer .footer-top .social-links a .fa-youtube-square {
+  color: #fff;
+}
+.main-footer .footer-top .social-links a .fa-instagram-square {
+  color: #fff;
+}
+.main-footer .footer-top .social-links a .fa-pinterest-square {
+  color: #fff;
+}
+.main-footer .footer-top .social-links a .fa-twitter-square {
+  color: #fff;
+}
+.main-footer .footer-top .social-links a:last-child {
+  margin-right: 0;
+}
+.main-footer .footer-bottom {
+  padding: 1.5rem;
+}
+.main-footer .footer-bottom .container {
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -67,13 +132,32 @@ h6 {
 .article-list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
 }
-.article-list article {
-  max-height: 30rem;
-  max-width: 30rem;
+.article-list a {
+  max-width: 50%;
+  text-decoration: none;
 }
-.article-list article header {
+@media screen and (min-width: 576px) {
+  .article-list a {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .article-list a {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .article-list a {
+    max-width: 33.3%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .article-list a {
+    max-width: 25%;
+  }
+}
+.article-list a article header {
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;

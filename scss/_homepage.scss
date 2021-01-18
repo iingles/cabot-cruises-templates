@@ -1,16 +1,40 @@
+.carousel {
+    //
+}
+
 .article-list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
 
-    article {
-        max-height: 30rem;
-        max-width: 30rem;
+    a {
+        max-width: 50%;
+        text-decoration: none;        
 
-        header {
-            text-align: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        @media screen and (min-width: $xs) {
+            max-width: 50%;
         }
-    }
+
+        @media screen and (min-width: $sm) {
+            max-width: 50%;
+        }
+
+        @media screen and (min-width: $md) {
+            max-width: 33.3%;
+        }
+
+        @media screen and (min-width: $lg) {
+            max-width: 25%;
+        }
+
+        article {
+
+            header {
+                text-align: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }            
+    
+        }
+    }   
+
 }

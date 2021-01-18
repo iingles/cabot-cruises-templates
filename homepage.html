@@ -3,46 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
 </head>
     <body>
         <header class="main-header">
             <div class="container">
-                <div class="header-top">
-                    <div class="header-logo">
-                        <img 
-                        src="./img/logo/clogo-234x150.png"                       
-                        srcset="./img/logo/clogo-62x40.png 3x,                        
-                                ./img/logo/clogo-117x75.png 2x,
-                                ./img/logo/clogo-234x150.png 1x"
-                        alt="Cabot Cruises Logo"
-                        />
-                    </div>
-                    <div class="header-contact">
-                        <a href="tel:1-800-555-1234">1-800-555-1234</a>
-                    </div>
-                </div>
-                <div class="header-bottom">
-                    <nav class="main-nav">
-                        <a href="#">home</a>
-                        <a href="#">cruises</a>
-                        <a href="#">agents</a>
-                        <a href="#">book</a>
-                    </nav>
-                    <div class="top-search">
-                        <form action="" class="main-search">
-                            <input type="text" placeholder="search...">
-                            <button type="submit"></button>
-                        </form>
-                    </div>
-                </div>
+                <img
+                    class="main-logo"
+                    src="img/clogo-234x150.png"
+                    srcset="
+                    img/logo/clogo-234x150.png 1x,
+                    img/logo/clogo-117x75.png 2x,
+                    img/logo/clogo-62x40.png 3x"
+                />
+                <h3><a href="tel:1-800-555-1234">1-800-555-1234</a></h3>
             </div>
         </header>
+        <nav class="main-nav" id="topNav">
+            <div class="container">
+                <label for="drop" class="toggle">Menu</label>
+                <input type="checkbox" id="drop" />
+                <ul class="main-menu">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">cruises</a></li>
+                    <li>
+                        <label for="drop-1" class="toggle">Cruises</label>
+                        <a href="#">agents</a>
+                        <input type="checkbox" id="drop-1" />
+                        <ul>
+                        <li><a href="#">link 1</a></li>
+                        <li><a href="#">link 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">book</a></li>
+                </ul>
+                <div class="search-container">
+                <form action="" id="searchForm">
+                    <input type="search" placeholder="search.." name="mainSearch">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                </div>
+            </div>
+        </nav>
 
         <main>
             <div class="container">
+
                 <section class="carousel">
                     <div class="slide"></div>
                     <div class="slide"></div>
@@ -51,42 +60,55 @@
                 </section>
     
                 <section class="article-list">
-                    <article>
-                        <header class="article-title">
-                            Article Title Goes Here and may wrap
-                            to two lines.
-                        </header>
-                        <footer class="article-footer">
-                            May 1, 2018
-                        </footer>
-                    </article>
-                    <article>
-                        <header class="article-title">
-                            Article Title Goes Here and may wrap
-                            to two lines.
-                        </header>
-                        <footer class="article-footer">
-                            May 1, 2018
-                        </footer>
-                    </article>
-                    <article>
-                        <header class="article-title">
-                            Article Title Goes Here and may wrap
-                            to two lines.
-                        </header>
-                        <footer class="article-footer">
-                            May 1, 2018
-                        </footer>
-                    </article>
-                    <article>
-                        <header class="article-title">
-                            Article Title Goes Here and may wrap
-                            to two lines.
-                        </header>
-                        <footer class="article-footer">
-                            May 1, 2018
-                        </footer>
-                    </article>
+                    <a href="#">
+                        <article>
+                            <header class="article-title">
+                                Article Title Goes Here and may wrap
+                                to two lines.
+                            </header>
+                            <footer class="article-footer">
+                                May 1, 2018
+                            </footer>
+                        </article>
+                    </a>
+
+                    <a href="#">
+                        <article>
+                            <header class="article-title">
+                                Article Title Goes Here and may wrap
+                                to two lines.
+                            </header>
+                            <footer class="article-footer">
+                                May 1, 2018
+                            </footer>
+                        </article>
+                    </a>
+
+                    <a href="#">
+                        <article>
+                            <header class="article-title">
+                                Article Title Goes Here and may wrap
+                                to two lines.
+                            </header>
+                            <footer class="article-footer">
+                                May 1, 2018
+                            </footer>
+                        </article>
+                    </a>
+
+                    <a href="#">
+                        <article>
+                            <header class="article-title">
+                                Article Title Goes Here and may wrap
+                                to two lines.
+                            </header>
+                            <footer class="article-footer">
+                                May 1, 2018
+                            </footer>
+                        </article>
+                    </a>
+                    
+ 
                 </section>
     
                 <section class="contact-info">
@@ -106,7 +128,7 @@
                         <h2>Newsletter</h2>
                         <p>
                             Subscribe to our email list and stay up-to-date with our
-                            ho6est offers and latest specials
+                            hottest offers and latest specials
                         </p>
                         <form action="" class="newsletter-signup">
                             <input type="text">
@@ -133,21 +155,29 @@
         </main>
 
         <footer class="main-footer">
-            <div class="container">
-                <div class="footer-top">
-                    <div class="social-links">
-                        <a href="" class="facebook"></a>
-                        <a href="" class="youtube"></a>
-                        <a href="" class="instagram"></a>
-                        <a href="" class="pinterest"></a>
-                        <a href="" class="twitter"></a>
-                    </div>
+
+            <div class="footer-top">
+                <div class="social-links container">
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-youtube-square"></i></a>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                    <a href=""><i class="fab fa-pinterest-square"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
                 </div>
-                <div class="footer-bottom">
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
                     &copy; 2021 Isaac Ingles | <a href="https://isaacingles.com">isaacingles.com</a>
-                </div>
-            </div>           
-        </footer>
+                </div>                    
+            </div>
+        
+        </footer>   
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script type="text/javascript" src="./js/scripts.js"></script>
 
         <script type="application/ld+json">
             {
