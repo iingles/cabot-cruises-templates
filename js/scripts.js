@@ -1,6 +1,8 @@
 $(document).ready(function(){
     $('.carousel').slick({
-        //options
+        autoplay: true,
+        dots: true,
+        arrows: false,
     })
    
     // Responsive menu button

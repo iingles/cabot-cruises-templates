@@ -130,37 +130,52 @@ h6 {
 }
 
 .article-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+  grid-template-areas: "art-1 art-2" "art-3 art-4";
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .article-list {
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "art-1 art-2 art-3" "art-4 null null";
+  }
+}
+@media (min-width: 992px) {
+  .article-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "art-1 art-2 art-3 art-4";
+  }
+}
+.article-list .art-1 {
+  grid-area: art-1;
+}
+.article-list .art-2 {
+  grid-area: art-2;
+}
+.article-list .art-3 {
+  grid-area: art-3;
+}
+.article-list .art-4 {
+  grid-area: art-4;
 }
 .article-list a {
-  max-width: 50%;
+  display: block;
+  width: auto;
   text-decoration: none;
 }
-@media screen and (min-width: 576px) {
-  .article-list a {
-    max-width: 50%;
-  }
+.article-list a article img {
+  width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .article-list a {
-    max-width: 50%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .article-list a {
-    max-width: 33.3%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .article-list a {
-    max-width: 25%;
-  }
-}
-.article-list a article header {
+.article-list a article .article-title {
+  flex: 1;
   text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  color: #000;
+}
+.article-list a article .article-footer {
+  color: #000;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=main.css.map */
