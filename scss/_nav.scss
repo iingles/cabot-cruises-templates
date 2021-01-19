@@ -1,18 +1,44 @@
-.main-nav {
-   
+.main-nav {   
+    position: relative;
     padding: 2rem 0;    
     background-color: #72B3E2;
+
+
+    #mobileMenu {
+        color: #fff;
+        font-size: 2rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        .fa-times {
+            display: none;
+        }
+
+        &.open .fa-bars {
+            display: none
+        }
+
+        &.open .fa-times {
+            display: inline-block;
+        }
+
+
+
+        @media screen and (min-width: $sm) {
+            display: none;
+        }
+    }
+
 
     .container {
         display: flex;
         flex-direction: row;
-        display: flex;
-        flex-direction: row;
+        align-items: center;
         justify-content: space-between;
     }
 
     .main-menu {
-        width: 75%;
         display: flex;
         flex-direction: row;
         list-style-type: none;
@@ -34,6 +60,11 @@
                 &:last-child {
                     margin-right: none;
                 }
+
+                @media screen and (max-width: $sm) {
+                    color: #000;
+                    margin: 1rem 0;
+                }
             }            
 
             .sub-menu {
@@ -50,7 +81,7 @@
                 transition: opacity 0.5s ease, top 0.2s ease;
                 background: #fff;
                 border-radius: .5rem;
-                z-index: 1000;
+                z-index: 1010;
 
                 li {
 
@@ -66,6 +97,7 @@
 
                     cursor: pointer;
                 }
+                
             }
 
             &:hover .sub-menu {
@@ -78,6 +110,23 @@
                 &:last-child {
                     margin-right: 3rem;
                 }
+            }
+        }
+
+        @media screen and (max-width: $sm) {
+            visibility: hidden;
+            width: 100%;
+            flex-direction: column;
+            position: absolute;
+            top: 7rem; 
+            left: 0;
+            padding: 1rem;
+            background: #fff;
+            color: #000;
+            z-index: 1000;
+
+            &.open {
+                visibility: visible;
             }
         }
     } 
@@ -99,5 +148,9 @@
             color: #000;
             cursor: pointer;
         }
+    }
+
+    @media screen and (max-width: $sm) {
+        padding: 2rem;
     }
 }

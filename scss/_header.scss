@@ -1,6 +1,6 @@
 .main-header {
-
     background-color: #f1f1f1;
+
 
     .container {
         display: flex;
@@ -10,6 +10,10 @@
 
     .header-phone {
         align-self:flex-end;
+
+        @media screen and (max-width: $sm) {
+            display: none;
+        }
 
         a {
             color: #000;

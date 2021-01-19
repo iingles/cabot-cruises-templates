@@ -1,11 +1,12 @@
 .carousel {
     .slick-dots li button:before {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     @media screen and (max-width: $sm) {
-        .slick-dots {
-            visibility: hidden;
+        .slick-slide {
+            display: flex;
+            justify-content: center;
         }
     }
 }
@@ -29,7 +30,8 @@
 
     @media (min-width: $md) {
         grid-template-columns: 1fr 1fr 1fr 1fr;	    
-	    grid-template-areas: "art-1 art-2 art-3 art-4";
+        grid-template-areas: "art-1 art-2 art-3 art-4";
+        grid-row-gap: 0;
     }
 
     
@@ -51,7 +53,9 @@
             position: relative;
 
             img {
+                display: block;
                 width: 100%;
+                margin: 0;
             }
 
             .article-title {

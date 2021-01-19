@@ -14,21 +14,27 @@
     <body>
         <header class="main-header">
             <div class="container">
-                <img
+                <figure class="logo">
+                    <img
                     class="main-logo"
-                    src="img/clogo-234x150.png"
+                    src="img/logo3x.png"
                     srcset="
-                    img/logo/clogo-234x150.png 1x,
-                    img/logo/clogo-117x75.png 2x,
-                    img/logo/clogo-62x40.png 3x"
-                />
+                    img/logo/logo1x.png 1x,
+                    img/logo/logo2x.png 2x,
+                    img/logo/logo3x.png 3x"
+                    />
+                </figure> 
                 <h1 class="header-phone"><a href="tel:1-800-555-1234">1-800-555-1234</a></h1>
             </div>
         </header>
-        <nav class="main-nav" id="topNav">
+
+        <nav class="main-nav" >
             <div class="container">
-                <!-- <label for="drop" class="toggle">Menu</label> -->
-                <ul class="main-menu">
+                <button id="mobileMenu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="main-menu" id="topNav">
                     <li class="top-link"><a href="#">home</a></li>
                     <li class="top-link"><a href="#">cruises</a></li>
                     <li class="top-link">

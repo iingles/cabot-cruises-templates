@@ -5,9 +5,9 @@ $(document).ready(function(){
     })
    
     // Responsive menu button
-    $('#hamburgerBtn').click(()=> {
-        $("#hamburgerBtn").toggleClass("open")
-        $("#primaryNav").toggleClass("open")
+    $('#mobileMenu').click(()=> {
+        $("#mobileMenu").toggleClass("open")
+        $("#topNav").toggleClass("open")
     })
      
 })
