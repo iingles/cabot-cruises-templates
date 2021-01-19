@@ -1,21 +1,103 @@
 .main-nav {
-    display: flex;
-    flex-direction: row;
+   
+    padding: 2rem 0;    
     background-color: #72B3E2;
-    color: #fff;
 
-    ul {
+    .container {
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-menu {
+        width: 75%;
         display: flex;
         flex-direction: row;
         list-style-type: none;
 
-        li {    
-            a {
+        .top-link {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            a {                
                 color: #fff;
+                font-size: 2.2rem;
+                text-transform: uppercase;
                 text-decoration: none;
+                margin-right: 2rem;
+
+                cursor: pointer;
+
+                &:last-child {
+                    margin-right: none;
+                }
+            }            
+
+            .sub-menu {
+                list-style-type: none;
+                display: flex;
+                width: 16rem;
+                padding: 1rem;
+                flex-direction: column;
+                position: absolute;
+                top: 2rem;
+                left: 0rem;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity 0.5s ease, top 0.2s ease;
+                background: #fff;
+                border-radius: .5rem;
+                z-index: 1000;
+
+                li {
+
+                    margin: 1rem 0;
+
+                    a {
+                        color: #7a7a7a;
+                    }
+
+                    &:last-child {
+                        margin-bottom: none!important;
+                    }
+
+                    cursor: pointer;
+                }
+            }
+
+            &:hover .sub-menu {
+                visibility: visible;
+                top: 3rem;
+                opacity: 100%;                
+            }
+
+            @media screen and (min-width: $md) {
+                &:last-child {
+                    margin-right: 3rem;
+                }
             }
         }
     } 
     
-    
+    #searchForm {
+        display: flex;
+        flex-direction: row;
+
+        input[type="search"] {
+            border: none;
+            padding: 1rem;
+        }
+
+        button[type="submit"] {
+            padding: 6px 10px;
+            background: #D0E3F0;
+            font-size: 17px;
+            border: none;
+            color: #000;
+            cursor: pointer;
+        }
+    }
 }

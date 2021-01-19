@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+    
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
 </head>
@@ -19,32 +22,29 @@
                     img/logo/clogo-117x75.png 2x,
                     img/logo/clogo-62x40.png 3x"
                 />
-                <h3><a href="tel:1-800-555-1234">1-800-555-1234</a></h3>
+                <h1 class="header-phone"><a href="tel:1-800-555-1234">1-800-555-1234</a></h1>
             </div>
         </header>
         <nav class="main-nav" id="topNav">
             <div class="container">
-                <label for="drop" class="toggle">Menu</label>
-                <input type="checkbox" id="drop" />
+                <!-- <label for="drop" class="toggle">Menu</label> -->
                 <ul class="main-menu">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">cruises</a></li>
-                    <li>
-                        <label for="drop-1" class="toggle">Cruises</label>
+                    <li class="top-link"><a href="#">home</a></li>
+                    <li class="top-link"><a href="#">cruises</a></li>
+                    <li class="top-link">
                         <a href="#">agents</a>
-                        <input type="checkbox" id="drop-1" />
-                        <ul>
-                        <li><a href="#">link 1</a></li>
-                        <li><a href="#">link 2</a></li>
+                        <ul class="sub-menu">
+                            <li><a href="#">link 1</a></li>
+                            <li><a href="#">link 2</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">book</a></li>
+                    <li class="top-link"><a href="#">book</a></li>
                 </ul>
-                <div class="search-container">
-                <form action="" id="searchForm">
-                    <input type="search" placeholder="search.." name="mainSearch">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
+                <div class="main-search">
+                    <form action="" id="searchForm">
+                        <input type="search" placeholder="search.." name="mainSearch">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -128,9 +128,15 @@
                     </a>
                     
  
-                </section>
-    
-                <section class="contact-info">
+                </section>    
+                
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            
+            <section class="contact-info">
+                <div class="container">
                     <div class="col">
                         <h2>Contact Us</h2>
                         <p>
@@ -139,7 +145,8 @@
                             Lexington, VA 24450
                         </p>
                         <h2>Phone:</h2>
-                        <a href="tel:18005551234">1-800-555-1234</a>
+                        <p><a href="tel:18005551234">1-800-555-1234</a></p>
+                        
                         <h2>Hours of Operation:</h2>
                         <p>Monday-Friday 9am-4pm</p>
                     </div>
@@ -147,7 +154,7 @@
                         <h2>Newsletter</h2>
                         <p>
                             Subscribe to our email list and stay up-to-date with our
-                            hottest offers and latest specials
+                            hottest offers and latest specials!
                         </p>
                         <form action="" class="newsletter-signup">
                             <input type="text">
@@ -169,11 +176,9 @@
                             regulations.
                         </p>
                     </div>
-                </section>
-            </div>
-        </main>
-
-        <footer class="main-footer">
+                </div>
+            </section>
+          
 
             <div class="footer-top">
                 <div class="social-links container">
@@ -186,7 +191,7 @@
             </div>
             <div class="footer-bottom">
                 <div class="container">
-                    &copy; 2021 Isaac Ingles | <a href="https://isaacingles.com">isaacingles.com</a>
+                    &copy; 2021 Isaac Ingles |&nbsp; <a href="https://isaacingles.com">isaacingles.com</a>
                 </div>                    
             </div>
         
